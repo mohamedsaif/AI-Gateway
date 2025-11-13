@@ -7,6 +7,7 @@ param modelsConfig array = []
 param apimSku string
 param apimSubscriptionsConfig array = []
 param inferenceAPIName string = 'inference-api'
+param inferenceAPIType string = 'AzureOpenAI'
 param inferenceAPIPath string = 'inference' // Path to the inference API in the APIM service
 param foundryProjectName string = 'default'
 
@@ -66,7 +67,7 @@ module foundryModule '../../modules/cognitive-services/v3/foundry.bicep' = {
   }
 
 // 5. APIM Inference API
-module inferenceAPIModule './inference-api.bicep' = {
+module inferenceAPIModule '../../modules/apim/v2/inference-api.bicep' = {
   name: 'inferenceAPIModule'
   params: {
     policyXml: loadTextContent('policy.xml')
@@ -75,6 +76,7 @@ module inferenceAPIModule './inference-api.bicep' = {
     appInsightsInstrumentationKey: appInsightsModule.outputs.instrumentationKey
     aiServicesConfig: foundryModule.outputs.extendedAIServicesConfig
     inferenceAPIName: inferenceAPIName
+    inferenceAPIType: inferenceAPIType
     inferenceAPIPath: inferenceAPIPath
   }
 }

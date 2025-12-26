@@ -281,6 +281,8 @@ The [Azure Well-Architected Framework](https://learn.microsoft.com/azure/well-ar
 * [News and announcements](https://techcommunity.microsoft.com/tag/API%20Management?nodeId=board%3AIntegrationsonAzureBlog)
 * [APIM Releases](https://github.com/Azure/API-Management/releases)
 
+_For much more API Management content, please also check out [APIM Love](https://aka.ms/apimlove)._
+
 > We believe that there may be valuable content that we are currently unaware of. We would greatly appreciate any suggestions or recommendations to enhance this list.
 
 ### Disclaimer

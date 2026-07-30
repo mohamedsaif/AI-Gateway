@@ -52,11 +52,6 @@ param manualProvisionedThroughput int = 400
 @maxValue(1000000)
 param autoscaleMaxThroughput int = 1000
 
-@description('Time to Live for data in analytical store. (-1 no expiry)')
-@minValue(-1)
-@maxValue(2147483647)
-param analyticalStoreTTL int = -1
-
 // ------------------
 //    VARIABLES
 // ------------------
@@ -110,7 +105,7 @@ module foundryModule '../../modules/cognitive-services/v3/foundry.bicep' = {
   }
 
 // 5. APIM Inference API
-module inferenceAPIModule '../../modules/apim/v2/inference-api.bicep' = {
+module inferenceAPIModule '../../modules/apim/v3/inference-api.bicep' = {
   name: 'inferenceAPIModule'
   params: {
     policyXml: loadTextContent('policy.xml')
@@ -313,7 +308,10 @@ resource cosmosDBAccountResource 'Microsoft.DocumentDB/databaseAccounts@2022-05-
     }
     databaseAccountOfferType: 'Standard'
     locations: cosmosDBLocations
-    enableAnalyticalStorage: true
+    disableLocalAuth: false
+  }
+  tags: {
+    SecurityControl: 'ignore'
   }
 }
 
@@ -350,7 +348,6 @@ resource cosmosDBContainer 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/c
         ]
         kind: 'Hash'
       }
-      analyticalStorageTtl: analyticalStoreTTL
     }
     options: throughput_Policy[throughputPolicy]
   }

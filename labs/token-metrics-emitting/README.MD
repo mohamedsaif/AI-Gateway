@@ -1,3 +1,19 @@
+---
+name: Token Metrics Emitting
+architectureDiagram: images/token-metrics-emitting.gif
+categories:
+  - Platform Capabilities
+  - Governance & Responsible AI
+services:
+  - Azure Monitor
+  - Application Insights
+shortDescription: Emit and track detailed token usage metrics for cost analysis and optimization.
+detailedDescription: Learn how to emit detailed token usage metrics from Azure API Management to Azure Monitor and Application Insights. This lab demonstrates how to track prompt tokens, completion tokens, and total token usage across different models and users. Build dashboards and alerts to monitor costs and usage patterns in real-time.
+tags: []
+authors:
+  - vieiraae
+---
+
 # APIM ❤️ AI Foundry
 
 ## [Token Metrics Emitting lab](token-metrics-emitting.ipynb)
@@ -22,7 +38,7 @@ Notes:
 
 - [Python 3.12 or later version](https://www.python.org/) installed
 - [VS Code](https://code.visualstudio.com/) installed with the [Jupyter notebook extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) enabled
-- [Python environment](https://code.visualstudio.com/docs/python/environments#_creating-environments) with the [requirements.txt](../../requirements.txt) or run `pip install -r requirements.txt` in your terminal
+- [uv](https://docs.astral.sh/uv/) — run `uv sync` from the repo root to install dependencies
 - [An Azure Subscription](https://azure.microsoft.com/free/) with [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#contributor) + [RBAC Administrator](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator) or [Owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#owner) roles
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed and [Signed into your Azure subscription](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively)
 

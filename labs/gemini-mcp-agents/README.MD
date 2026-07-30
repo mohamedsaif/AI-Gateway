@@ -1,3 +1,19 @@
+---
+name: Gemini MCP Agents
+architectureDiagram: images/gemini-mcp-agents.gif
+categories:
+  - AI Agents
+  - Models Usage
+services:
+  - MCP
+  - Multi-Cloud AI
+shortDescription: Integrate Google Gemini models with MCP-based agents through Azure API Management.
+detailedDescription: Learn to integrate Google Gemini models with Model Context Protocol (MCP) agents through Azure API Management. This lab demonstrates multi-cloud AI architectures, showing how to expose Gemini's capabilities alongside Azure OpenAI, implement MCP servers for tool access, and manage cross-cloud AI services through a unified gateway.
+tags: []
+authors:
+  - nourshaker-msft
+---
+
 # APIM ❤️ GenAI Everywhere
 
 ## Gemini + MCP Agents + Content Safety lab
@@ -14,7 +30,7 @@ The lab also explores who to enforce Content Safety and Tokens metrics to create
 
 - [Python 3.12 or later version](https://www.python.org/) installed
 - [VS Code](https://code.visualstudio.com/) installed with the [Jupyter notebook extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) enabled
-- [Python environment](https://code.visualstudio.com/docs/python/environments#_creating-environments) with the [requirements.txt](../../requirements.txt) or run `pip install -r requirements.txt` in your terminal
+- [uv](https://docs.astral.sh/uv/) — run `uv sync` from the repo root to install dependencies
 - [An Azure Subscription](https://azure.microsoft.com/free/) with [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#contributor) + [RBAC Administrator](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator) or [Owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#owner) roles
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed and [Signed into your Azure subscription](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively)
 

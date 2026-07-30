@@ -1,3 +1,18 @@
+---
+name: Content Safety
+architectureDiagram: images/content-safety.gif
+categories:
+  - Governance & Responsible AI
+services:
+  - Azure AI Content Safety
+  - Azure OpenAI
+shortDescription: Implement content filtering and safety checks for AI-generated responses.
+detailedDescription: This lab demonstrates how to implement Azure AI Content Safety to filter and moderate content in both requests and responses. Learn how to protect your applications from harmful content including hate speech, violence, self-harm, and sexual content using Azure's advanced content moderation capabilities integrated with Azure API Management.
+tags: []
+authors:
+  - vieiraae
+---
+
 # APIM ❤️ Responsible AI
 
 ## [Content Safety lab](content-safety.ipynb)
@@ -12,7 +27,7 @@ Playground to try the [content safety policy](https://learn.microsoft.com/en-us/
 
 - [Python 3.12 or later version](https://www.python.org/) installed
 - [VS Code](https://code.visualstudio.com/) installed with the [Jupyter notebook extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) enabled
-- [Python environment](https://code.visualstudio.com/docs/python/environments#_creating-environments) with the [requirements.txt](../../requirements.txt) or run `pip install -r requirements.txt` in your terminal
+- [uv](https://docs.astral.sh/uv/) — run `uv sync` from the repo root to install dependencies
 - [An Azure Subscription](https://azure.microsoft.com/free/) with [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#contributor) + [RBAC Administrator](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator) or [Owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#owner) roles
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed and [Signed into your Azure subscription](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively)
 

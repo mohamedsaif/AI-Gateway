@@ -1,3 +1,24 @@
+---
+name: Azure AI Foundry Private Connectivity with MCP
+architectureDiagram: images/mcp-private-endpoint-entra-id.gif
+categories:
+  - AI Agents
+  - Knowledge & Tools
+  - Platform Capabilities
+services:
+  - MCP
+  - Azure Front Door
+  - Private Link
+  - Azure AI Foundry
+  - Managed Identity
+shortDescription: Create a private network for consuming MCPs using Foundry Agents Classic.
+detailedDescription: Playground to show how to create a private network for consuming REST API managed as MCPs using Foundry Agents Classic. This lab demonstrates how to create a private network for consuming MCPs from Foundry Agents Classic using Private Link Services, Azure API Management (APIM), and Azure Front Door.
+tags: []
+authors:
+  - pablocast
+  - nourshaker-msft
+---
+
 # Azure AI Foundry Private Connectivity Lab
 
 A hands-on lab demonstrating secure agent consumption through private networking with Azure AI Foundry, API Management, and Front Door. Features MCP (Model Context Protocol) integration, private endpoints, and agent-based interactions. MCP servers are only accessible through the frontdoor. 
@@ -33,7 +54,7 @@ Core Components:
 ```bash
 git clone <repository-url>
 cd AI-Gateway
-pip install -r requirements.txt
+uv pip install -r pyproject.toml
 ```
 
 ### 2. Deploy Infrastructure

@@ -1,3 +1,20 @@
+---
+name: FinOps Framework
+architectureDiagram: images/finops-framework.gif
+categories:
+  - Governance & Responsible AI
+  - Platform Capabilities
+services:
+  - Azure Monitor
+  - Cost Management
+  - FinOps
+shortDescription: Implement comprehensive cost tracking and optimization for AI services.
+detailedDescription: Implement a complete FinOps framework for managing AI service costs. This lab covers setting up detailed cost tracking, creating chargeback models for different teams or customers, implementing budget alerts, optimizing token usage, and building dashboards for cost visibility. Learn to balance performance, quality, and cost in your AI deployments.
+tags: []
+authors:
+  - vieiraae
+---
+
 # APIM ❤️ FinOps
 
 ## [FinOps Framework lab](finops-framework.ipynb)
@@ -14,7 +31,7 @@ This playground leverages the [FinOps Framework](https://www.finops.org/framewor
 
 - [Python 3.12 or later version](https://www.python.org/) installed
 - [VS Code](https://code.visualstudio.com/) installed with the [Jupyter notebook extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) enabled
-- [Python environment](https://code.visualstudio.com/docs/python/environments#_creating-environments) with the [requirements.txt](../../requirements.txt) or run `pip install -r requirements.txt` in your terminal
+- [uv](https://docs.astral.sh/uv/) — run `uv sync` from the repo root to install dependencies
 - [An Azure Subscription](https://azure.microsoft.com/free/) with [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#contributor) + [RBAC Administrator](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator) or [Owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#owner) roles
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed and [Signed into your Azure subscription](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively)
 

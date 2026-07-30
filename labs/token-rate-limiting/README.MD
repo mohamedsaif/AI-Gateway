@@ -1,3 +1,18 @@
+---
+name: Token Rate Limiting
+architectureDiagram: images/token-rate-limiting.gif
+categories:
+  - Governance & Responsible AI
+  - Platform Capabilities
+services:
+  - Azure OpenAI
+shortDescription: Control costs and prevent abuse with token-based rate limiting policies.
+detailedDescription: Implement sophisticated token-based rate limiting to control API usage and costs. This lab shows how to set up rate limits based on token consumption rather than just request counts, providing more granular control over Azure OpenAI usage and costs. Learn to configure different rate limits for different user tiers and implement quota management.
+tags: []
+authors:
+  - vieiraae
+---
+
 # APIM ❤️ AI Foundry
 
 ## [Token Rate Limiting lab](token-rate-limiting.ipynb)
@@ -16,7 +31,7 @@ The azure-openai-token-limit policy prevents Azure OpenAI Service API usage spik
 
 - [Python 3.12 or later version](https://www.python.org/) installed
 - [VS Code](https://code.visualstudio.com/) installed with the [Jupyter notebook extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) enabled
-- [Python environment](https://code.visualstudio.com/docs/python/environments#_creating-environments) with the [requirements.txt](../../requirements.txt) or run `pip install -r requirements.txt` in your terminal
+- [uv](https://docs.astral.sh/uv/) — run `uv sync` from the repo root to install dependencies
 - [An Azure Subscription](https://azure.microsoft.com/free/) with [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#contributor) + [RBAC Administrator](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator) or [Owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#owner) roles
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed and [Signed into your Azure subscription](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively)
 

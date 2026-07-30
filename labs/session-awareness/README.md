@@ -1,3 +1,19 @@
+---
+name: Session Awareness
+architectureDiagram: images/session-awareness.gif
+categories:
+  - Platform Capabilities
+  - Models Usage
+services:
+  - Azure Cosmos DB
+  - Azure OpenAI
+shortDescription: Maintain conversation context across multiple requests using session management.
+detailedDescription: Build session-aware AI applications that maintain conversation context across multiple requests. This lab demonstrates how to implement session management using Azure API Management policies, store session state in Azure Cosmos DB, and provide context-aware responses by including conversation history in subsequent requests to Azure OpenAI.
+tags: []
+authors:
+  - dbarkol
+---
+
 # APIM ❤️ AI Foundry
 
 ## [Session Awareness lab](session-awareness.ipynb)
@@ -33,7 +49,7 @@ The OpenAI Responses API requires maintaining conversation state across multiple
 
 - [Python 3.12 or later version](https://www.python.org/) installed
 - [VS Code](https://code.visualstudio.com/) installed with the [Jupyter notebook extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) enabled
-- [Python environment](https://code.visualstudio.com/docs/python/environments#_creating-environments) with the [requirements.txt](../../requirements.txt) or run `pip install -r requirements.txt` in your terminal
+- [uv](https://docs.astral.sh/uv/) — run `uv sync` from the repo root to install dependencies
 - [An Azure Subscription](https://azure.microsoft.com/free/) with [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#contributor) + [RBAC Administrator](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator) or [Owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#owner) roles
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed and [Signed into your Azure subscription](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively)
 

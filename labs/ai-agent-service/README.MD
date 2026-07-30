@@ -1,6 +1,22 @@
+---
+name: AI Agent Service
+architectureDiagram: images/ai-agent-service-small.gif
+categories:
+  - AI Agents
+services:
+  - Azure Functions
+  - Azure OpenAI
+shortDescription: Build and orchestrate AI agents with specialized capabilities.
+detailedDescription: Create sophisticated AI agent services that can perform specialized tasks and orchestrate multiple agents. This lab demonstrates how to build agents with specific capabilities (like weather lookup, order placement, or data analysis), use function calling to enable agent actions, and coordinate multiple agents through Azure API Management for complex workflows.
+tags: []
+authors:
+  - vieiraae
+  - nourshaker-msft
+---
+
 # APIM ❤️ AI Agents
 
-## [Azure AI Agent Service lab](ai-agent-service.ipynb)
+## [Azure AI Agent Service lab](ai-agent-service-v2.ipynb)
 
 ![flow](../../images/ai-agent-service.gif)
 
@@ -10,13 +26,13 @@ Use this playground to explore the [Azure AI Agent Service](https://learn.micros
 
 - [Python 3.12 or later version](https://www.python.org/) installed
 - [VS Code](https://code.visualstudio.com/) installed with the [Jupyter notebook extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) enabled
-- [Python environment](https://code.visualstudio.com/docs/python/environments#_creating-environments) with the [requirements.txt](../../requirements.txt) or run `pip install -r requirements.txt`
+- [uv](https://docs.astral.sh/uv/) — run `uv sync` from the repo root to install dependencies
 - [An Azure Subscription](https://azure.microsoft.com/free/) with [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#contributor) + [RBAC Administrator](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#role-based-access-control-administrator) or [Owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles/privileged#owner) roles
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed and [Signed into your Azure subscription](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively)
 
 ### 🚀 Get started
 
-Proceed by opening the [Jupyter notebook](ai-agent-service.ipynb), and follow the steps provided.
+Proceed by opening the [Jupyter notebook](ai-agent-service-v2.ipynb), and follow the steps provided.
 
 ### 🗑️ Clean up resources
 
